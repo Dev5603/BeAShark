@@ -1,0 +1,57 @@
+.test h3 {
+    font-family: var(--ff-josefin);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    margin-block: 1.5rem;
+}
+
+.test > div  {
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin-block: 2rem;
+    margin-inline: 1.5rem;
+}
+
+.test h4 {
+    font-family: var(--ff-sans);
+    font-size: 1.75rem;
+    font-weight: bold;
+
+    color: #163e5a;
+
+    margin-block: 0.5rem;
+}
+
+.test > div div {
+    padding-inline: 1.5rem;
+}
+
+.test img {
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+}
+
+.test p {
+    font-family: var(--ff-sans);
+    margin-block: 1rem;
+}
+
+@media only screen and (width <= 45em) {
+
+    .test > div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .test img {
+        margin-block: 2rem;
+    }
+
+}

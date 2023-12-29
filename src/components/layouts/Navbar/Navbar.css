@@ -46,10 +46,6 @@
 
 @media only screen and (width <= 45em) {
 
-    .primary-header {
-        justify-content: center;
-    }
-
     .logo {
         width: 12.5rem;
 

@@ -1,13 +1,12 @@
 .video {
-    width: 100dvw;
+    width: 100%;
     height: 100dvh;
     overflow: hidden;
 }
 
 .video video {
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+    height: 100%; width: 100%;
     transition: transform 0.01s ease-out;
 }
 
@@ -90,10 +89,10 @@
 }
 
 .service img {
-    height: 40rem;
-    width: 40rem;
+    height: 35rem;
+    width: 35rem;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.7;
 
     transition: opacity 1000ms ease;
 }
@@ -107,7 +106,7 @@
     margin: 2rem;
 }
 
-.service h4 {
+.service a {
     font-family: var(--ff-josefin);
     font-size: 1.5rem;
     font-weight: bold;
@@ -124,19 +123,18 @@
     margin-block: 2rem;
 }
 
-.service[data-service='bmi'] h4,
+.service[data-service='bmi'] a,
 .service[data-service='bmi'] p,
-.service[data-service='towel'] h4,
-.service[data-service='towel'] p,
-.service[data-service='charging'] h4,
-.service[data-service='charging'] p {
+.service[data-service='towel'] a,
+.service[data-service='towel'] p {
     font-weight: bold;
     color: black;
 }
 
-.service[data-service='steam'] h4,
-.service[data-service='ice'] h4,
-.service[data-service='test'] h4 {
+.service[data-service='steam'] a,
+.service[data-service='ice'] a,
+.service[data-service='test'] a,
+.service[data-service='charging'] a {
     color: whitesmoke;
 }
 

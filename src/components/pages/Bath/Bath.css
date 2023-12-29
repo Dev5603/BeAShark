@@ -1,0 +1,57 @@
+.bath h3 {
+    font-family: var(--ff-josefin);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    margin-block: 1.5rem;
+}
+
+.bath > div  {
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin-block: 2rem;
+    margin-inline: 1.5rem;
+}
+
+.bath h4 {
+    font-family: var(--ff-sans);
+    font-size: 1.75rem;
+    font-weight: bold;
+
+    color: #163e5a;
+
+    margin-block: 0.5rem;
+}
+
+.bath > div div {
+    padding-inline: 1.5rem;
+}
+
+.bath img {
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+}
+
+.bath p {
+    font-family: var(--ff-sans);
+    margin-block: 1rem;
+}
+
+@media only screen and (width <= 45em) {
+
+    .bath > div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bath img {
+        margin-block: 2rem;
+    }
+
+}

@@ -1,16 +1,18 @@
 import React, { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import './Home.css'
 
 import videomp4 from '../../../assets/video/angelita.mp4'
 import videowebm from '../../../assets/video/angelita.webm'
 import image1 from '../../../assets/image/women.png'
-import charging from '../../../assets/image/charging.png'
+import charging from '../../../assets/image/charging.jpg'
 import steam from '../../../assets/image/steam.png'
 import towel from '../../../assets/image/towel.png'
 import bmi from '../../../assets/image/bmi.png'
 import ice from '../../../assets/image/ice.png'
 import test from '../../../assets/image/test.png'
 import reel from '../../../assets/video/reel.mp4'
+import Navbar from '../../layouts/Navbar/Navbar'
 
 function Home() {
     const video = useRef(null)
@@ -32,6 +34,7 @@ function Home() {
 
     return (
         <>
+            <Navbar />
             <section className='video'>
                 <video ref={video} autoPlay loop muted >
                     <source src={videowebm} type="video/webm" />
@@ -60,42 +63,42 @@ function Home() {
                     <div className='service' data-service='charging'>
                         <img src={charging} alt="" />
                         <div>
-                            <h4>Charging Zone</h4>
+                            <Link to='/charging'>Charging Zone</Link>
                             <p>Your go to destination for fast, convenient device charging anytime, anywhere!</p>
                         </div>
                     </div>
                     <div className='service' data-service='steam'>
                         <img src={steam} alt="" />
                         <div>
-                            <h4>Steam</h4>
+                            <Link to='/steam'>Steam</Link>
                             <p>A haven for relaxation and wellness, where the soothing embrace of steam emhances your mind and body harmony</p>
                         </div>
                     </div>
                     <div className='service' data-service='towel'>
                         <img src={towel} alt="" />
                         <div>
-                            <h4>Hand & Bath Towel</h4>
+                            <Link to='/towel'>Hand & Bath Towel</Link>
                             <p>A perfect blend of softness and absorbency for a spa-like experience at home</p>
                         </div>
                     </div>
                     <div className='service' data-service='bmi'>
                         <img src={bmi} alt="" />
                         <div>
-                            <h4>BMI</h4>
+                            <Link to='/bmi'>BMI</Link>
                             <p>Precision technology for personalised insights into your body composition and welness journey</p>
                         </div>
                     </div>
                     <div className='service' data-service='ice'>
                         <img src={ice} alt="" />
                         <div>
-                            <h4>Ice Bath</h4>
+                            <Link to='bath'>Ice Bath</Link>
                             <p>A transformative journey to soothe muscles and rejuvenate your well-being</p>
                         </div>
                     </div>
                     <div className='service' data-service='test'>
                         <img src={test} alt="" />
                         <div>
-                            <h4>Fitness Test</h4>
+                            <Link to='test'>Fitness Test</Link>
                             <p>Embark on monthly journey of self-improvement with our fitness test, sculpting a stronger, healthier version of yourself</p>
                         </div>
                     </div>
@@ -134,7 +137,7 @@ function Home() {
                 <p>Suggestions? Or feedback? Hit us up!</p>
 
                 <div>
-                    <p><span>Email: </span>sharkfitness@gmail.com</p>
+                    <p><span>Email: </span>sharkfitindia@gmail.com</p>
                     <p><span>Phone: </span>+91 8451096123</p>
                 </div>
             </section>
