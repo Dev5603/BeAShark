@@ -1,0 +1,52 @@
+.primary-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    background-color: #020611;
+    color: whitesmoke;
+
+    margin-top: 3.5rem;
+}
+
+.primary-footer div p {
+    font-family: var(--ff-josefin);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    top: -2.5rem;
+}
+
+.logo-footer > img {
+    width: 12.5rem;
+
+    margin: auto;
+}
+
+.secondary-navigation > li,
+.social-navigation > li {
+    margin-block: 1.75rem;
+}
+
+.secondary-navigation > li > a,
+.social-navigation > li > a {
+    font-family: var(--ff-josefin);
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+@media only screen and (width <= 45em) {
+    
+    .primary-footer {
+        display: block;
+
+        padding-block: 3rem;
+    }
+
+    .primary-footer div p {
+        font-size: 1.25rem;
+        top: -3rem;
+    }
+
+}

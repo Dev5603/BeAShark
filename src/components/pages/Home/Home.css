@@ -1,0 +1,294 @@
+.video {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.video video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.01s ease-out;
+}
+
+.tag {
+    position: absolute;
+    top: 15rem;
+
+    font-family: var(--ff-sans);
+    font-weight: bold;
+    font-size: 1.925rem;
+    text-transform: uppercase;
+
+    max-width: 30ch;
+
+    color: whitesmoke;
+
+    margin-inline: 3.5rem;
+}
+
+.tag span {
+    display: block;
+
+    font-size: 1.25rem;
+
+    padding-block: 0.5rem;
+}
+
+.two {
+    padding-block: 7.5rem;
+    padding-inline: 7rem;
+
+    background-color: #020611;
+}
+
+.two h2 {
+    font-family: var(--ff-josefin);
+    font-weight: 400;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+
+    max-width: 35ch;
+
+    margin-block: 2.5rem;
+
+    color: whitesmoke;
+}
+
+.clear {
+    filter: blur(0);
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-block: 2rem;
+}
+
+.three > div:not([class]) {
+    text-align: center;
+    margin-inline: 2.5rem;
+}
+
+.three h3 {
+    font-family: var(--ff-sans);
+    font-size: 2rem;
+}
+
+.three > div p {
+    font-family: var(--ff-sans);
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+    opacity: 0.6;
+
+    transition: opacity 1000ms ease;
+}
+
+.service img:is(:hover, :focus) {
+    opacity: 1;
+}
+
+.service {
+    position: relative;
+    margin: 2rem;
+}
+
+.service h4 {
+    font-family: var(--ff-josefin);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: black;
+}
+
+.service div {
+    position: absolute;
+    bottom: 0;
+
+    margin-inline: 1rem;
+    margin-block: 2rem;
+}
+
+.service[data-service='bmi'] h4,
+.service[data-service='bmi'] p,
+.service[data-service='towel'] h4,
+.service[data-service='towel'] p,
+.service[data-service='charging'] h4,
+.service[data-service='charging'] p {
+    font-weight: bold;
+    color: black;
+}
+
+.service[data-service='steam'] h4,
+.service[data-service='ice'] h4,
+.service[data-service='test'] h4 {
+    color: whitesmoke;
+}
+
+.service p {
+    font-size: 0.925rem;
+    width: 50ch;
+
+    color: whitesmoke;
+}
+
+.service > img {
+    position: relative;
+}
+
+.service > div {
+    position: absolute;
+}
+
+.four {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.four video {
+    aspect-ratio: 16/9;
+    padding-inline: 1.5rem;
+}
+
+.four h3 {
+    font-family: var(--ff-josefin);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    max-width: 20ch;
+
+    padding-inline: 1.5rem;
+    margin-block: 1.75rem;
+}
+
+.about {
+    text-align: center;
+
+    background-color: #163e5a;
+    color: whitesmoke;
+
+    padding-block: 2.75rem;
+    margin-block: 5rem;
+}
+
+.about h3 {
+    font-family: var(--ff-josefin);
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    padding-block: 1.25rem;
+}
+
+.about p {
+    font-family: var(--ff-sans);
+    font-size: 1.25rem;
+
+    max-width: 75ch;
+    margin: auto;
+}
+
+.about p > span {
+    display: block;
+
+    padding-block: 1.5rem;
+}
+
+.about p > span > span {
+    display: block;
+    font-size: 1.75rem;
+
+    padding-block: 0.5rem;
+}
+
+.contact {
+    text-align: center;
+
+    margin-block: 5rem;
+}
+
+.contact h3 {
+    font-family: var(--ff-josefin);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.contact p:not(div > p) {
+    font-family: var(--ff-sans);
+    font-weight: bold;
+
+    margin-block: 1.25rem;
+}
+
+.contact p span {
+    font-family: var(--ff-josefin);
+    font-weight: bold;
+}
+
+.contact div p {
+    font-size: 1.125rem;
+}
+
+@media only screen and (width <= 45em) {
+
+    .tag {
+        font-size: 1.125rem;
+
+        margin-inline: 1.5rem;
+    }
+
+    .tag span {
+        font-size: 1rem;
+
+        padding-block: 0.25rem;
+    }
+
+    .two {
+        padding-block: 3rem;
+        padding-inline: 1rem;
+    }
+
+    .two h2 {
+        font-size: 1.5rem;
+    }
+
+    .service p {
+        width: 30ch;
+    }
+
+    .service img {
+        opacity: 1;
+    }
+
+    .four video {
+        width: 100%; height: 100%;
+    }
+
+    .four h3 {
+        font-size: 1.75rem;
+        max-width: 25ch;
+    }
+
+    .about h3 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        padding-inline: 2.5rem;
+    }
+
+}
