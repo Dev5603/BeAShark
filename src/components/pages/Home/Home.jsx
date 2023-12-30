@@ -5,14 +5,14 @@ import './Home.css'
 import videomp4 from '../../../assets/video/angelita.mp4'
 import videowebm from '../../../assets/video/angelita.webm'
 import image1 from '../../../assets/image/women.png'
-import charging from '../../../assets/image/charging.jpg'
+import charging from '../../../assets/image/charging.png'
 import steam from '../../../assets/image/steam.png'
 import towel from '../../../assets/image/towel.png'
 import bmi from '../../../assets/image/bmi.png'
 import ice from '../../../assets/image/ice.png'
 import test from '../../../assets/image/test.png'
 import reel from '../../../assets/video/reel.mp4'
-import Navbar from '../../layouts/Navbar/Navbar'
+import yoga from '../../../assets/image/yoga.jpg'
 
 function Home() {
     const video = useRef(null)
@@ -34,7 +34,6 @@ function Home() {
 
     return (
         <>
-            <Navbar />
             <section className='video'>
                 <video ref={video} autoPlay loop muted >
                     <source src={videowebm} type="video/webm" />
@@ -50,6 +49,16 @@ function Home() {
                     </h1>
                 </div>
             </section>
+            <section className='last'>
+                <img src={yoga} alt="" />
+                <div>
+                    <h3>Believe & Achieve</h3>
+                    <p>
+                        We believe that everyone has the potential to achieve their peak physical health
+                        and mental well-being.
+                    </p>
+                </div>
+            </section>
             <section className='three'>
                 <div>
                     <h3>Our Services</h3>
@@ -60,7 +69,7 @@ function Home() {
                 </div>
 
                 <div className='services'>
-                    <div className='service' data-service='charging'>
+                    <div className='service grid-col-span-2' data-service='charging'>
                         <img src={charging} alt="" />
                         <div>
                             <Link to='/charging'>Charging Zone</Link>
@@ -88,18 +97,18 @@ function Home() {
                             <p>Precision technology for personalised insights into your body composition and welness journey</p>
                         </div>
                     </div>
-                    <div className='service' data-service='ice'>
-                        <img src={ice} alt="" />
-                        <div>
-                            <Link to='bath'>Ice Bath</Link>
-                            <p>A transformative journey to soothe muscles and rejuvenate your well-being</p>
-                        </div>
-                    </div>
                     <div className='service' data-service='test'>
                         <img src={test} alt="" />
                         <div>
                             <Link to='test'>Fitness Test</Link>
                             <p>Embark on monthly journey of self-improvement with our fitness test, sculpting a stronger, healthier version of yourself</p>
+                        </div>
+                    </div>
+                    <div className='service' data-service='ice'>
+                        <img src={ice} alt="" />
+                        <div>
+                            <Link to='bath'>Ice Bath</Link>
+                            <p>A transformative journey to soothe muscles and rejuvenate your well-being</p>
                         </div>
                     </div>
                 </div>
@@ -115,31 +124,6 @@ function Home() {
                 <video autoPlay loop muted >
                     <source src={reel} type="video/mp4" />
                 </video>
-            </section>
-            <section className='about'>
-                <h3>Who We Are</h3>
-                <p>
-                    Shark Fitness is more than just a fitness platform; we are a community of like-minded individuals
-                    committed to embracing a lifestyle of vitality and self-improvement. Founded on the principles of
-                    iclusivity, encouragement, and continuous growth, our platform welcomes individuals of all fitness
-                    levels and backgrounds.
-
-                    <span>
-                        Welcome to a community that believes in your potential
-                        <span>
-                            Welcome to Shark Fitness
-                        </span>
-                    </span>
-                </p>
-            </section>
-            <section className='contact'>
-                <h3>Contact Us</h3>
-                <p>Suggestions? Or feedback? Hit us up!</p>
-
-                <div>
-                    <p><span>Email: </span>sharkfitindia@gmail.com</p>
-                    <p><span>Phone: </span>+91 8451096123</p>
-                </div>
             </section>
         </>
     )

@@ -1,0 +1,45 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    color: black;
+}
+
+.about img {
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+
+    margin-block: 2rem;
+}
+
+.about h3 {
+    font-family: var(--ff-josefin);
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    padding-block: 1.25rem;
+}
+
+.about p {
+    font-family: var(--ff-sans);
+    font-size: 1.25rem;
+
+    max-width: 75ch;
+    margin: auto;
+}
+
+.about p > span {
+    display: block;
+
+    padding-block: 1.5rem;
+}
+
+.about p > span > span {
+    display: block;
+    font-size: 1.75rem;
+
+    padding-block: 0.5rem;
+}

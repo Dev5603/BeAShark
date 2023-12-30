@@ -16,6 +16,12 @@
     width: 100%;
 }
 
+.notHome {
+    position: static;
+
+    background-color: #163e5a;
+}
+
 .logo {
     width: 15rem;
 

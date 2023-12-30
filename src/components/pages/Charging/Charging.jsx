@@ -1,7 +1,7 @@
 import React from 'react'
 import './Charging.css'
 
-import charging from '../../../assets/image/Charging.jpg'
+import charging from '../../../assets/image/Charging.png'
 
 function Charging() {
     return (
